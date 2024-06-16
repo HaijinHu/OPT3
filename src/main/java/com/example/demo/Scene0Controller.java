@@ -81,7 +81,7 @@ public class Scene0Controller {
             }
 
         } else {
-            loginmessage.setText("Please enter password or username.");
+            loginmessage.setText("Vul uw Gebruikersnaam en Wachtwoord in.");
         }
     }
 

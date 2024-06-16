@@ -1,9 +1,11 @@
 package com.example.demo.Controllers;
 // Plan Training
+import com.example.demo.PlanEenTraining;
 import com.example.demo.Scene2Controller;
 import com.example.demo.Switches.Switch;
 import com.example.demo.Switches.Switch2;
 import com.example.demo.Switches.SwitchM5;
+import com.example.demo.objecten.Training;
 import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -31,33 +33,8 @@ public class M1Controller implements Initializable {
     @FXML
     private Label loginmessage;
     public void PlanTraining(){
-        int lineCount = 1;
+        PlanEenTraining.PlanTraining(loginmessage,Date,comboBox,Max,Min);
 
-        try (Scanner scanner = new Scanner(new File("TrainingLijst"))) {
-            while (scanner.hasNextLine()) {
-                scanner.nextLine();
-                lineCount++;
-            }
-        } catch (FileNotFoundException eee) {
-            eee.printStackTrace();
-        }
-        if (!Min.getText().isBlank() && !Max.getText().isBlank()) {
-            int accID = lineCount;
-            String max = Max.getText();
-            String min = Min.getText();
-            LocalDate date = Date.getValue();
-            String tijd = comboBox.getValue();
-            try {
-                BufferedWriter writer = new BufferedWriter(new FileWriter("TrainingLijst", true));
-                writer.write(accID + ", " + max+", "+min+", "+date+", "+tijd+"\n");
-                writer.close();
-                loginmessage.setText("U heeft training " + accID + " gemaakt: Max atleten " + max+", Min atleten "+min+", Datum "+date+", Tijd "+tijd+"\n" +".");
-            } catch (IOException e) {
-                loginmessage.setText("Er is een fout opgetreden bij het schrijven naar het bestand");
-            }
-        }else {
-            loginmessage.setText("U moet alles invullen.");
-        }
     }
     public void switchToScene0(ActionEvent event) throws IOException {
         Switch2 S = new Switch2();

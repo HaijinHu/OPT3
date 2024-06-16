@@ -1,7 +1,5 @@
 package com.example.demo.objecten;
 
-import java.time.LocalDate;
-
 public class Training{
     private int TrainingID;
     private String Max;
@@ -31,6 +29,7 @@ public class Training{
     public String getDate() {
         return Date;
     }
+
 }
 
 

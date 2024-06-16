@@ -2,6 +2,8 @@ package com.example.demo.Controllers;
 //Pas afwezigheiddagen aan
 import com.example.demo.Scene0Controller;
 import com.example.demo.Switches.Switch2;
+import com.example.demo.objecten.Aanwezigheid;
+import com.example.demo.objecten.Afwezigheid;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.DatePicker;
@@ -16,20 +18,9 @@ public class M3Controller {
     @FXML
     private Label loginmessage;
     public void PlanAF(){
-        int accID = Scene0Controller.accID;
-        if (Date != null) {
-            LocalDate date = Date.getValue();
-            try {
-                BufferedWriter writer = new BufferedWriter(new FileWriter("BlokeerdagenLijst", true));
-                writer.write(accID + ", " +date+", \n");
-                writer.close();
-                loginmessage.setText("Uw blokkerdag is ingepland.");
-            } catch (IOException e) {
-                loginmessage.setText("Er is een fout opgetreden bij het schrijven naar het bestand");
-            }
-        }else {
-            loginmessage.setText("U moet alles invullen.");
-        }
+        String date = String.valueOf(Date.getValue());
+        Afwezigheid.PlanAF(date);
+        loginmessage.setText(Afwezigheid.loginmessage);
     }
     public void switchToScene0(ActionEvent event) throws IOException {
         Switch2 S = new Switch2();

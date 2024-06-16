@@ -30,4 +30,8 @@ public class Scene2Controller {
         Switch S = new SwitchM5();
         S.switchToScene(event);
     }
+    public void switchToSceneM6(ActionEvent event) throws IOException {
+        Switch S = new SwitchM6();
+        S.switchToScene(event);
+    }
 }

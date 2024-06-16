@@ -16,7 +16,7 @@
             </image>
         </ImageView>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="500.0" layoutX="473.0" layoutY="-1.0" stroke="#ff6d00" strokeType="INSIDE" strokeWidth="12.0" width="326.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="374.0" layoutX="16.0" layoutY="28.0" stroke="#ff6d00" strokeType="INSIDE" strokeWidth="12.0" width="326.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="434.0" layoutX="16.0" layoutY="28.0" stroke="#ff6d00" strokeType="INSIDE" strokeWidth="12.0" width="326.0" />
       <Button fx:id="account" blendMode="SRC_ATOP" layoutX="45.0" layoutY="160.0" onAction="#switchToSceneM2" prefHeight="34.0" prefWidth="267.0" text="Voeg mensen toe tot training" />
       <Button fx:id="agenda" blendMode="SRC_ATOP" layoutX="45.0" layoutY="340.0" onAction="#switchToSceneM5" prefHeight="34.0" prefWidth="267.0" text="Toon planner" />
       <Button fx:id="aanwezigheid" blendMode="SRC_ATOP" layoutX="45.0" layoutY="280.0" onAction="#switchToSceneM4" prefHeight="34.0" prefWidth="267.0" text="Pas beschrikbaarheid aan" />
@@ -73,5 +73,6 @@
          </font>
       </Label>
       <Button fx:id="account1" blendMode="SRC_ATOP" layoutX="45.0" layoutY="100.0" onAction="#switchToSceneM1" prefHeight="34.0" prefWidth="267.0" text="Plan training" />
+      <Button fx:id="Ervaring" blendMode="SRC_ATOP" layoutX="46.0" layoutY="400.0" onAction="#switchToSceneM6" prefHeight="34.0" prefWidth="267.0" text="Toon ervaring" />
     </children>
 </AnchorPane>

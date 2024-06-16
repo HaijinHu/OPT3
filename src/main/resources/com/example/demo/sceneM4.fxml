@@ -24,13 +24,14 @@
          </font>
       </Label>
       <Button fx:id="plan" blendMode="SRC_ATOP" layoutX="266.0" layoutY="386.0" onAction="#PlanAN" prefHeight="34.0" prefWidth="267.0" text="Pas Aanwezigheiddagen aan" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="140.0" layoutX="260.0" layoutY="20.0" stroke="#ff6d00" strokeType="INSIDE" strokeWidth="12.0" width="280.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="155.0" layoutX="260.0" layoutY="20.0" stroke="#ff6d00" strokeType="INSIDE" strokeWidth="12.0" width="280.0" />
       <DatePicker fx:id="Date" layoutX="285.0" layoutY="46.0" prefHeight="25.0" prefWidth="231.0" promptText="Datum" />
-      <ComboBox fx:id="comboBox" layoutX="284.0" layoutY="110.0" prefHeight="25.0" prefWidth="231.0" promptText="Tijden" visibleRowCount="6" />
-      <Label fx:id="loginmessage" alignment="CENTER" contentDisplay="TOP" layoutX="206.0" layoutY="291.0" prefHeight="20.0" prefWidth="389.0" textFill="RED">
+      <ComboBox fx:id="comboBox" layoutX="285.0" layoutY="85.0" prefHeight="25.0" prefWidth="231.0" promptText="Tijden" visibleRowCount="6" />
+      <Label fx:id="Loginmessage" alignment="CENTER" contentDisplay="TOP" layoutX="206.0" layoutY="291.0" prefHeight="20.0" prefWidth="389.0" textFill="RED">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Label>
+      <ComboBox fx:id="locatie" layoutX="285.0" layoutY="126.0" prefHeight="25.0" prefWidth="231.0" promptText="Locatie" visibleRowCount="6" />
     </children>
 </AnchorPane>
