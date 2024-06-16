@@ -16,7 +16,7 @@ public class Main extends Application {
         Image image = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/com/example/demo/images/RoeiFoto.png")));
         stage.getIcons().add(image);
         try {
-            Parent root = FXMLLoader.load(getClass().getResource("sceneM6.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("scene0.fxml"));
             Scene scene = new Scene(root);
             stage.setScene(scene);
             stage.show();
