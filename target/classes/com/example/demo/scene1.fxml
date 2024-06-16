@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #2F3EBF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.Scene1Controller">
+   <children>
+      <ImageView blendMode="SRC_ATOP" fitHeight="133.0" fitWidth="800.0" layoutX="1.0" layoutY="186.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/streep.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ACCFoto" blendMode="SRC_ATOP" fitHeight="169.0" fitWidth="169.0" layoutX="316.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="loginLabel" alignment="CENTER" layoutX="211.0" layoutY="235.0" prefHeight="35.0" prefWidth="378.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="login" blendMode="SRC_ATOP" layoutX="289.0" layoutY="343.0" onAction="#switchToScene2" prefHeight="51.0" prefWidth="223.0" text="Ga naar menu">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="login1" blendMode="SRC_ATOP" layoutX="14.0" layoutY="461.0" onAction="#switchToScene0" prefHeight="22.0" prefWidth="96.0" text="Loguit" />
+   </children>
+</AnchorPane>

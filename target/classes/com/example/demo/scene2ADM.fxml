@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #2F3EBF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.Scene2Controller">
+    <children>
+        <ImageView blendMode="SRC_ATOP" fitHeight="133.0" fitWidth="800.0" layoutX="1.0" layoutY="186.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@images/streep.png" />
+            </image>
+        </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="500.0" layoutX="473.0" layoutY="-1.0" stroke="#ff6d00" strokeType="INSIDE" strokeWidth="12.0" width="326.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="434.0" layoutX="16.0" layoutY="28.0" stroke="#ff6d00" strokeType="INSIDE" strokeWidth="12.0" width="326.0" />
+      <Button fx:id="account" blendMode="SRC_ATOP" layoutX="45.0" layoutY="160.0" onAction="#switchToSceneM2" prefHeight="34.0" prefWidth="267.0" text="Voeg mensen toe tot training" />
+      <Button fx:id="agenda" blendMode="SRC_ATOP" layoutX="45.0" layoutY="340.0" onAction="#switchToSceneM5" prefHeight="34.0" prefWidth="267.0" text="Toon planner" />
+      <Button fx:id="aanwezigheid" blendMode="SRC_ATOP" layoutX="45.0" layoutY="280.0" onAction="#switchToSceneM4" prefHeight="34.0" prefWidth="267.0" text="Pas beschrikbaarheid aan" />
+      <Button fx:id="afwezigheid" blendMode="SRC_ATOP" layoutX="45.0" layoutY="220.0" onAction="#switchToSceneM3" prefHeight="34.0" prefWidth="267.0" text="Pas awezigheiddagen aan" />
+      <Button fx:id="loguit" blendMode="SRC_ATOP" layoutX="14.0" layoutY="461.0" onAction="#switchToScene0" prefHeight="22.0" prefWidth="96.0" text="Loguit" />
+      <Label fx:id="loginLabel" alignment="CENTER" layoutX="45.0" layoutY="50.0" prefHeight="35.0" prefWidth="267.0" text="Menu">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView blendMode="SRC_ATOP" fitHeight="160.0" fitWidth="295.0" layoutX="489.0" layoutY="111.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/Proteusblad.png" />
+         </image>
+      </ImageView>
+      <ImageView blendMode="SRC_ATOP" fitHeight="353.0" fitWidth="295.0" layoutX="486.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/proto.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="loginLabel1" layoutX="500.0" layoutY="335.0" prefHeight="34.0" prefWidth="267.0" text="                   Type weer: Zwaar bewolkt" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="loginLabel11" layoutX="500.0" layoutY="360.0" prefHeight="34.0" prefWidth="267.0" text="               Temperatuur: 14.1 °C" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="loginLabel111" layoutX="500.0" layoutY="385.0" prefHeight="34.0" prefWidth="267.0" text="                             Wind: 6NNW" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="loginLabel1111" layoutX="500.0" layoutY="410.0" prefHeight="34.0" prefWidth="267.0" text="         Luchtvochtigheid: 90 %" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="loginLabel11111" layoutX="500.0" layoutY="435.0" prefHeight="34.0" prefWidth="267.0" text="                           Zon op: 05:25" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="loginLabel111111" layoutX="500.0" layoutY="460.0" prefHeight="34.0" prefWidth="267.0" text="                      Zon onder: 21:55">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="loginLabel12" alignment="CENTER" layoutX="503.0" layoutY="297.0" prefHeight="34.0" prefWidth="267.0" text="WEERBERICHT" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="account1" blendMode="SRC_ATOP" layoutX="45.0" layoutY="100.0" onAction="#switchToSceneM1" prefHeight="34.0" prefWidth="267.0" text="Plan training" />
+      <Button fx:id="Ervaring" blendMode="SRC_ATOP" layoutX="46.0" layoutY="400.0" onAction="#switchToSceneM6" prefHeight="34.0" prefWidth="267.0" text="Toon ervaring" />
+    </children>
+</AnchorPane>
